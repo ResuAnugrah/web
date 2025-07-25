@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: white;
+  }
+  
+  .header {
+    position: relative;
+    background-image: url('luffy.jpg'); /* Ganti dengan gambar kamu */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .header * {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .desc-box {
+    margin: 20px auto;
+    background-color: #ccc;
+    padding: 15px;
+    border-radius: 15px;
+    width: fit-content;
+    color: black;
+  }
+  
+  .tentang, .section {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .tentang p, .section p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1rem;
+  }
+  
+  .social-btn2 {
+    margin: 20px auto;
+    background-color: #999;
+    padding: 15px 25px;
+    border-radius: 15px;
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    width: fit-content;
+    text-decoration: none;
+  }
+  
+  .social-btn {
+    margin: 20px auto;
+    background-color: #999;
+    padding: 15px 25px;
+    border-radius: 15px;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .icon-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px;
+  }
+  
+  .icon-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    border-radius: 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .icon-button img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+  }
+  
